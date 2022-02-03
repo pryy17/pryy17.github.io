@@ -8,7 +8,6 @@ const translateAbout = document.querySelectorAll(".translateAbout");
 
 let header_height = header.offsetHeight;
 
-
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
     translate.forEach(element => {
@@ -26,6 +25,22 @@ window.addEventListener('scroll', () => {
             element.style.transform = `translateY(${scroll * speed}px)`;
         })
     }
+})
+
+document.querySelector(".frontend-skill").addEventListener('click', () => {
+    const toggle = document.querySelector(".frontend-skills")
+    toggle.classList.toggle('open-none');
+    
+})
+
+document.querySelector(".uiux-skill").addEventListener('click', () => {
+    const toggle = document.querySelector(".uiux-skills")
+    toggle.classList.toggle('open-none');
+})
+
+document.querySelector(".framework-skill").addEventListener('click', () => {
+    const toggle = document.querySelector(".framework-skills")
+    toggle.classList.toggle('open-none');
 })
 
 function toggleMobileMenu(menu) {

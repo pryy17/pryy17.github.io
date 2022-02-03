@@ -171,17 +171,6 @@ section {
   
 }
 
-section:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 25;
-}
-
-
 .img-profile {
   width: 100%;
 }
@@ -276,7 +265,6 @@ section:after {
   grid-template-columns: repeat(2, auto);
   align-content: center;
   position: relative;
-  padding: 10em;
   width: 100%;
   font-size: 12px;
   height: 100vh;
@@ -284,10 +272,9 @@ section:after {
 
 .container-skill > .col {
   width: 100%;
-  justify-self:center;
   margin: auto;
   padding: 5px;
-
+  cursor: pointer;
 }
 
 .title-skill {
@@ -299,14 +286,21 @@ section:after {
   padding: 2vw;
 }
 
+.title-skill:hover {
+  box-shadow: none;
+  background: rgb(211, 211, 211);;
+}
+
 /* frontend skill */
 
 .frontend-skills {
   position: relative;
   width: 100%;
   margin: 5px 0;
-  display: block;
+  display: none;
+  transition: 1s;
 }
+
 .skills-bar {
   padding: 5px 30px;
 }
@@ -365,8 +359,9 @@ section:after {
 .progress-line .javascript {
   width: 62%;
 }
-.progress-line .c {
-  width: 90%;
+
+.progress-line .tailwind {
+  width: 70%;
 }
 
 .bar .progress-line span::before {
@@ -379,7 +374,7 @@ section:after {
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-style: #f0f0f0;
+  border-top-style: #000000;
   border-top-color: #07374a;
 }
 
@@ -397,7 +392,7 @@ section:after {
 
 
 .progress-line .html::after {
-  content: "80%";
+  content: "85%";
 }
 .progress-line .css::after {
   content: "70%";
@@ -408,28 +403,66 @@ section:after {
 .progress-line .javascript::after {
   content: "62%";
 }
-.progress-line .c::after {
-  content: "90%";
+.progress-line .tailwind::after {
+  content: "70%";
 }
-
 
 /* ui/ux skill */
 
 .uiux-skills {
-  display: block;
+  display: none;
   position: relative;
   width: 100%;
   margin: 5px 0;
 }
 
+.progress-line .figma {
+  width: 80%;
+}
+.progress-line .adobe {
+  width: 75%;
+}
+.progress-line .photoshop {
+  width: 60%;
+}
+.progress-line .coreldraw {
+  width: 70%;
+}
+
+.progress-line .figma::after {
+  content: "80%";
+}
+.progress-line .adobe::after {
+  content: "75%";
+}
+.progress-line .photoshop::after {
+  content: "60%";
+}
+.progress-line .coreldraw::after {
+  content: "70%";
+}
 /* framework skill */
 
 .framework-skills {
-  display: block;
+  display: none;
   position: relative;
   width: 100%;
   margin: 5px 0;
 }
+
+.progress-line .react::after {
+  content: "80%";
+}
+
+.progress-line .react {
+  width: 70%;
+}
+
+/* framework skill */
+.open-none {
+  display: block ;
+}
+
 /* skill */
 
 /* responsif */
