@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 header {
@@ -168,7 +171,6 @@ section {
   width: 100%;
   background-color: rgb(231, 231, 243);
   position: relative;
-  
 }
 
 .img-profile {
@@ -230,7 +232,6 @@ section {
   width: 100%;
   top: 400px;
   object-fit: cover;
-
 }
 
 /* about */
@@ -238,14 +239,16 @@ section {
 /* skill */
 
 #skills {
-  padding: 3rem;
+  padding: 4rem 0;
   position: relative;
   z-index: 19;
   width: 100%;
 }
 
 #skills > .container {
-  margin-top: 20px;
+  width: 100%;
+  background-size:cover;
+  
 }
 
 #skills > h1 {
@@ -258,21 +261,25 @@ section {
 #skills > p {
   width: 100%;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .container-skill {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   align-content: center;
   position: relative;
   width: 100%;
+  height: 110vh;
   font-size: 12px;
-  height: 100vh;
+  background-image: url("assets/muntain.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container-skill > .col {
   width: 100%;
-  margin: auto;
+  margin: 0;
   padding: 5px;
   cursor: pointer;
 }
@@ -284,21 +291,20 @@ section {
   width: 100%;
   text-align: center;
   padding: 2vw;
+  border-radius: 20px;
+
 }
 
 .title-skill:hover {
   box-shadow: none;
-  background: rgb(211, 211, 211);;
+  background: rgb(211, 211, 211);
 }
 
 /* frontend skill */
-
 .frontend-skills {
   position: relative;
   width: 100%;
-  margin: 5px 0;
   display: none;
-  transition: 1s;
 }
 
 .skills-bar {
@@ -311,12 +317,12 @@ section {
 
 .skills-bar .bar .info span {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .skills-bar .bar .info {
   margin-bottom: 8px;
-  color: #07374a;
+  color: #ffffff;
 }
 
 .skills-bar .bar .progress-line {
@@ -390,7 +396,6 @@ section {
   border-radius: 3px;
 }
 
-
 .progress-line .html::after {
   content: "85%";
 }
@@ -460,11 +465,128 @@ section {
 
 /* framework skill */
 .open-none {
-  display: block ;
+  display: block;
 }
 
 /* skill */
 
+/* ==================qualification================== */
+
+#study {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(26, 26, 145);
+}
+
+.study__title {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.study__title > h1 {
+  font-size: 4em;
+}
+
+.container__study {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* The actual timeline (the vertical ruler) */
+.container__study::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(2, 49, 255);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 25px;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.534);
+}
+
+/* Container around content */
+.container__timeline {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  
+}
+
+/* The circles on the timeline */
+.container__timeline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(125, 90, 241);
+  border: 4px solid #ffffff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.534);
+}
+
+/* qualification */
 /* responsif */
 
 @media only screen and (max-width: 600px) {
@@ -501,7 +623,6 @@ section {
     grid-template-columns: 1fr;
     align-content: center;
     align-items: center;
-    
   }
 
   .profile-bio > h1 {
@@ -510,14 +631,14 @@ section {
     position: relative;
     text-align: center;
   }
-  
+
   .profile-bio > h1 > .border {
     width: 100%;
     height: 3px;
     background-color: black;
     position: absolute;
   }
-  
+
   .profile-bio > p {
     text-align: left;
     text-align: center;
@@ -540,5 +661,39 @@ section {
     margin-top: 190px;
   }
 
+  .study__row {
+    padding: 0;
+  }
+
+  /* timeline */
+  /* Place the timelime to the left */
+  .container__study::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container__timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container_timeline {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 }
 /* responsif */
