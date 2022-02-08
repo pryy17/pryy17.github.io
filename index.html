@@ -8,6 +8,8 @@
     <title>personal page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -60,7 +62,7 @@
         <div class="container">
             <div class="row container-skill">
                 <!-- frontend bar -->
-                <div class="col frontend-skill" data-aos="fade-down" data-aos-duration="1000">
+                <div class="col frontend-skill" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
                     <span class="frontend-skill-ikon"></span>
                     <h2 class="title-skill">Frontend Developer</h2>
                     <div class="frontend-skills">
@@ -99,7 +101,7 @@
                     </div>
                 </div>
                 <!-- ui/ux bar -->
-                <div class="col uiux-skill" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+                <div class="col uiux-skill" data-aos="fade-down" data-aos-duration="1000">
                     <span class="uiux-skill-ikon"></span>
                     <h2 class="title-skill">UI/UX</h2>
                     <div class="uiux-skills">
@@ -156,33 +158,82 @@
     </section>
     <!-- ======================== study section =========================== -->
     <section id="study">
-        <div class="study__title" data-aos="zoom-in-up">
-            <h1 data-aos="zoom-in-up" data-aos-duration="2000">QUALIFICATION</h1>
-            <span data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100">My study journey</span>
+        <div class="study__title">
+            <h1 data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100">QUALIFICATION</h1>
+            <p data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="100">My study journey</p>
         </div>
         <div class="container__study">
-            <div class="container__timeline left" data-aos="flip-up">
-              <div class="content">
-                <strong>IPS</strong>
-                <h2>SMAN 56</h2>
-                <p>2016-2017</p>
-              </div>
-            </div>
-            <div class="container__timeline right" data-aos="flip-up" data-aos-delay="100">
-              <div class="content">
-                <strong>Graphic Design</strong>
-                <h2>PPKD JAKBAR</h2>
-                <p>2019</p>
-              </div>
-            </div>
-            <div class="container__timeline left"data-aos="flip-up" data-aos-delay="200">
+            <div class="container__timeline left" data-aos="flip-up" data-aos-duration="1000">
                 <div class="content">
-                <strong>Teknik Informatika</strong>
-                <h2>ESA UNGGUL</h2>
-                <p>2019-2023</p>
+                    <strong>IPS</strong>
+                    <h2>SMAN 56</h2>
+                    <p>2016-2017</p>
                 </div>
-              </div>
-        </div> 
+            </div>
+            <div class="container__timeline right" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="content">
+                    <strong>Graphic Design</strong>
+                    <h2>PPKD JAKBAR</h2>
+                    <p>2019</p>
+                </div>
+            </div>
+            <div class="container__timeline left" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="content">
+                    <strong>Teknik Informatika</strong>
+                    <h2>ESA UNGGUL</h2>
+                    <p>2019-2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portofolio">
+        <div class="portofolio_title">
+            <h1 data-aos="zoom-in-up" data-aos-duration="2000">PORTOFOLIO</h1>
+            <p data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100">My project</p>
+        </div>
+        <div class="swiper_container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(assets/nature-1.jpg)">
+                        <div class="container_slide">
+                            <h1>Company Profile</h1>
+                            <p>Pembuatan website yang dimulai dari pembuatan konsep asli berkualitas tinggi meningkatkan
+                                citra positif perusahaan dimata customer. Pendekatan komunikatif secara profesional dan
+                                menghindari
+                                kesalahan persepsi atau umum lainnya.
+                            </p>
+                            <button><strong>ORDER</strong></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(assets/nature-2.jpg)">
+                        <div class="container_slide">
+                            <h1>Kasir WEB</h1>
+                            <p>Pembuatan website yang dimulai dari pembuatan konsep asli berkualitas tinggi meningkatkan
+                                citra positif perusahaan dimata customer. Pendekatan komunikatif secara profesional dan
+                                menghindari
+                                kesalahan persepsi atau umum lainnya.
+                            </p>
+                            <button><strong>ORDER</strong></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(assets/nature-3.jpg)">
+                        <div class="container_slide">
+                            <h1>Portofolio Website</h1>
+                            <p>Pembuatan website yang dimulai dari pembuatan konsep asli berkualitas tinggi meningkatkan
+                                citra positif perusahaan dimata customer. Pendekatan komunikatif secara profesional dan
+                                menghindari
+                                kesalahan persepsi atau umum lainnya.
+                            </p>
+                            <button><strong>ORDER</strong></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(assets/nature-3.jpg)">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </section>
 </body>
 </div>
@@ -193,6 +244,7 @@
 <script>
     AOS.init();
 </script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="app.js"></script>
 </body>
 

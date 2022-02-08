@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
@@ -247,8 +247,7 @@ section {
 
 #skills > .container {
   width: 100%;
-  background-size:cover;
-  
+  background-size: cover;
 }
 
 #skills > h1 {
@@ -292,7 +291,6 @@ section {
   text-align: center;
   padding: 2vw;
   border-radius: 20px;
-
 }
 
 .title-skill:hover {
@@ -494,12 +492,11 @@ section {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
 /* The actual timeline (the vertical ruler) */
 .container__study::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: rgb(2, 49, 255);
@@ -517,12 +514,12 @@ section {
   position: relative;
   background-color: inherit;
   width: 50%;
-  
 }
 
 /* The circles on the timeline */
+
 .container__timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -587,6 +584,68 @@ section {
 }
 
 /* qualification */
+/* portofolio */
+
+
+.swiper_container {
+  font-size: 14px;
+  color: #000;
+  margin:auto;
+  padding: 0;
+  position: relative;
+  width: 62em;
+  height: 100vh;
+  overflow: hidden;
+}
+.swiper {
+  width: 453px;
+  height: 400px;
+  position: absolute;
+  top: 90px;
+  right: 15vw;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.container_slide {
+  transform: translate(27em, 6em);
+  width: 80%;
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.container_slide > h1 {
+  margin-bottom: 10px;
+}
+
+.container_slide > button {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.534);
+  border-radius: 5px;
+}
+.swiper-slide-active {
+  display: block;
+}
+.portofolio_title {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+/* portofolio */
 /* responsif */
 
 @media only screen and (max-width: 600px) {
@@ -671,14 +730,14 @@ section {
     left: 31px;
   }
 
-/* Full-width containers */
+  /* Full-width containers */
   .container__timeline {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-/* Make sure that all arrows are pointing leftwards */
+  /* Make sure that all arrows are pointing leftwards */
   .container_timeline {
     left: 60px;
     border: medium solid white;
@@ -686,14 +745,37 @@ section {
     border-color: transparent white transparent transparent;
   }
 
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
     left: 15px;
   }
 
-/* Make all right containers behave like the left ones */
+  /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
+
+  .swiper {
+    right: 0;
+  }
+
+  .swiper_container {
+    width: 100%;
+  }
+  .container_slide {
+    transform: translate(0,0);
+    height: 100%;
+    padding-top: 50px;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+
+  .swiper {
+    width: 400px;
+    height: 400px;
+  }
 }
+
 /* responsif */
