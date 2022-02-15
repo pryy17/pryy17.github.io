@@ -239,7 +239,6 @@ section {
 /* skill */
 
 #skills {
-  padding: 4rem 0;
   position: relative;
   z-index: 19;
   width: 100%;
@@ -474,6 +473,8 @@ section {
   width: 100%;
   height: 100vh;
   background-color: rgb(26, 26, 145);
+  margin: auto;
+  overflow: hidden;
 }
 
 .study__title {
@@ -850,26 +851,7 @@ textarea:valid+label {
   filter: sepia(0.5);
 }
 
-@media only screen and (max-width: 800px) {
-  h2 {
-    font-size: clamp(40px, 10vw, 60px);
-  }
-}
 
-@media only screen and (max-width: 400px) {
-  h2 {
-    font-size: clamp(30px, 12vw, 60px);
-  }
-  
-  .links {
-    padding-top: 30px;
-  }
-  
-  img {
-    width: 38px;
-    height: 38px;
-  }
-}
 
 /* contact */
 /* responsif */
@@ -979,7 +961,8 @@ textarea:valid+label {
 
   /* Make all right containers behave like the left ones */
   .right {
-    left: 0%;
+    left: 0;
+    margin: auto;
   }
 
   .swiper {
