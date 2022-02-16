@@ -13,14 +13,16 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="navbar">
             <div id="brand"><a href="/">PRYY</a></div>
             <nav>
                 <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#study">Study</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
                 </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -28,9 +30,11 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <ul class="mobile-menu">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#study">Study</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
                 </ul>
             </div>
         </div>
@@ -50,8 +54,8 @@
                 <p>Web Developer, with extensive knowledge and im fresh graduate, working in web technologies and UI/UX
                     design, delivering quality work</p>
             </div>
-            <img src="assets/fullbeachs.png" alt="profile" class="row img-profile" data-aos="flip-left"
-                data-aos-duration="3000" data-aos-delay="50">
+            <img src="https://source.unsplash.com/random/?developer" alt="profile" class="row img-profile"
+                data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50">
         </div>
         <img src="assets/cloud/cloud1.png" alt="cloud1" class="cloud1 translateAbout" data-speed="-0.20">
         <img src="assets/cloud/cloud2.png" alt="cloud2" class="cloud2 translateAbout" data-speed="-0.40">
@@ -158,6 +162,7 @@
     </section>
     <!-- ======================== study section =========================== -->
     <section id="study">
+        <div class="shadow"></div>
         <div class="study__title">
             <h1 data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100">QUALIFICATION</h1>
             <p data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="100">My study journey</p>
@@ -185,8 +190,31 @@
                 </div>
             </div>
         </div>
+        <div class="container_glowing">
+            <div class="glowing">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+            <div class="glowing">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+            <div class="glowing">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+            <div class="glowing">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
     </section>
     <section id="portofolio">
+        <div class="shadow"></div>
         <div class="portofolio_title">
             <h1 data-aos="zoom-in-up" data-aos-duration="2000">PORTOFOLIO</h1>
             <p data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="100">My project</p>
@@ -194,7 +222,7 @@
         <div class="swiper_container" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(assets/nature-1.jpg)">
+                    <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random/?coder)">
                         <div class="container_slide">
                             <h1>Company Profile</h1>
                             <p>Pembuatan website yang dimulai dari pembuatan konsep asli berkualitas tinggi meningkatkan
@@ -205,7 +233,7 @@
                             <button><strong>ORDER</strong></button>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image:url(assets/nature-2.jpg)">
+                    <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random/?computer)">
                         <div class="container_slide">
                             <h1>Kasir WEB</h1>
                             <p>Pembuatan website yang dimulai dari pembuatan konsep asli berkualitas tinggi meningkatkan
@@ -216,7 +244,7 @@
                             <button><strong>ORDER</strong></button>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image:url(assets/nature-3.jpg)">
+                    <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random/?software)">
                         <div class="container_slide">
                             <h1>Portofolio Website</h1>
                             <p>Pembuatan website yang dimulai dari pembuatan konsep asli berkualitas tinggi meningkatkan
@@ -242,48 +270,49 @@
     <!-- ======================== contact =========================== -->
     <section id="contact">
         <div class="contact-box" data-aos="zoom-in-up" data-aos-duration="2000">
-          <div class="contact-links">
-            <h2>CONTACT</h2>
-            <div class="links">
-              <div class="link">
-                <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
-              </div>
-              <div class="link">
-                <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
-              </div>
-              <div class="link">
-                <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
-              </div>
-              <div class="link">
-                <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
-              </div>
+            <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                    </div>
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+                    </div>
+                    <div class="link">
+                        <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="contact-form-wrapper">
-            <form>
-              <div class="form-item">
-                <input type="text" name="sender" required>
-                <label>Name:</label>
-              </div>
-              <div class="form-item">
-                <input type="text" name="email" required>
-                <label>Email:</label>
-              </div>
-              <div class="form-item">
-                <textarea class="" name="message" required></textarea>
-                <label>Message:</label>
-              </div>
-              <button class="submit-btn">Send</button>  
-            </form>
-          </div>
+            <div class="contact-form-wrapper">
+                <form>
+                    <div class="form-item">
+                        <input type="text" name="sender" required>
+                        <label>Name:</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="email" required>
+                        <label>Email:</label>
+                    </div>
+                    <div class="form-item">
+                        <textarea class="" name="message" required></textarea>
+                        <label>Message:</label>
+                    </div>
+                    <button class="submit-btn">Send</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="app.js"></script>
 </body>
 
